@@ -9,7 +9,10 @@ In this poject, we will prepare Olympic data available for analysis and dashboar
 ![image](https://github.com/Akash743/azure-data-engineering-project-tokyo-olympics/assets/57750483/9a1febe4-0a4e-484e-93f7-669a7f53f185)
 
 
--------------------------------------------**Pipeline**-------------------------------------------------------------------
+
+
+
+-------------------------------------------**Pipeline**---------------------------------------------------
 **Data Source:** 5 files related to Olympics data(Athletes, Medals, Coaches, Participation) are present in **Github** repo in csv format. 
 
 **Data Ingestion:** This step involves bringing the files from Github into the Azure system. Will use **Azure Lake Storage Gen 2** to store the Raw files.
