@@ -13,6 +13,8 @@ In this poject, we will prepare Olympic data available for analysis and dashboar
 
 
 -------------------------------------------**Pipeline**---------------------------------------------------
+
+
 **Data Source:** 5 files related to Olympics data(Athletes, Medals, Coaches, Participation) are present in **Github** repo in csv format. 
 
 **Data Ingestion:** This step involves bringing the files from Github into the Azure system. Will use **Azure Lake Storage Gen 2** to store the Raw files.
