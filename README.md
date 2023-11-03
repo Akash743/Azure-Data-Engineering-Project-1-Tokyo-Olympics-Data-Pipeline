@@ -35,7 +35,7 @@ In this poject, we will prepare Olympic data available for analysis and dashboar
 **Synapse Analytics**: Its a cloud based analytics service which combines big data and data wharehousing into a single integrated platform
 
 
-**Steps** 
+-----------------------------**Steps** -------------------------------------------
 
 1. Create Storage Account. Create new Resource Group for this
 2. Create Container in Storage Account to store data. Add directories here to store Raw Data and Transformed Data
