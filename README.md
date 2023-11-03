@@ -29,7 +29,8 @@ Pipeline is as follows:
 **Steps** 
 
 1. Create Storage Account. Create new Resource Group for this
-2. Create Container in STorage Account to store data. Add directories here to store Raw Data and Transformed Data
-
+2. Create Container in Storage Account to store data. Add directories here to store Raw Data and Transformed Data
+3. Create Data Factory: To pull data from our source(Github). WHile creatig, attach it to the same Resource Group. Go to Author and create Pipeline for Data Ingestion. Use copy data option and use the csv file links from Github using HTTP data store option to create the pipeline. Copied data sink is the Raw data folder which we created in Step 2 and Linked Service would be the Storage account. On successfully running the pipeline, we would have data available in Raw Data directory in Storage.
+4. Create Azure Databricks workspace: Attach same Resouce Group 
 
 
