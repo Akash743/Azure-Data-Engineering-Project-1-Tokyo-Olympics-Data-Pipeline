@@ -25,7 +25,7 @@ In this poject, we will prepare Olympic data available for analysis and dashboar
 
 **Visualization**: We can use Azure Synapse for charting and visualization. Later, it can also be connected to Dashboarding tools like PowerBI and Tableau
 
-
+-----------------------------------------**Services Used**---------------------------------------------------
 **Azure Data Lake Storage Gen2 (ADLS)** is a cloud-based repository for both structured and unstructured data. For example, you could use it to store everything from documents to images to social media streams. Data Lake Storage Gen2 is built on top of Blob Storage. This gives you the best of both worlds
 
 **Azure Data Factory** is a cloud-based data integration service that allows you to create data-driven workflows in the cloud for orchestrating and automating data movement and data transformation.ADF does not store any data itself. It allows you to create data-driven workflows to orchestrate the movement of data between supported data stores and then process the data using compute services in other regions or in an on-premise environment. It also allows you to monitor and manage workflows using both programmatic and UI mechanisms.
@@ -35,11 +35,13 @@ In this poject, we will prepare Olympic data available for analysis and dashboar
 **Synapse Analytics**: Its a cloud based analytics service which combines big data and data wharehousing into a single integrated platform
 
 
------------------------------**Steps** -------------------------------------------
+----------------------------------------**Steps** -------------------------------------------
 
 1. Create Storage Account. Create new Resource Group for this
 2. Create Container in Storage Account to store data. Add directories here to store Raw Data and Transformed Data
 3. Create Data Factory: To pull data from our source(Github). WHile creatig, attach it to the same Resource Group. Go to Author and create Pipeline for Data Ingestion. Use copy data option and use the csv file links from Github using HTTP data store option to create the pipeline. Copied data sink is the Raw data folder which we created in Step 2 and Linked Service would be the Storage account. On successfully running the pipeline, we would have data available in Raw Data directory in Storage.
+   ![Screenshot (24)](https://github.com/Akash743/azure-data-engineering-project-tokyo-olympics/assets/57750483/0c1b3c18-a361-474d-aa42-4669873f3bf3)
+
 4. Create Azure Databricks workspace: Attach same Resouce Group. Go to Compute and create Spark Cluster. Now, need to create App Registration so as to access the Cluster to ADLS Gen 2 data. Get Client ID, Teant ID from app and create Secret key for the app from 'Certificates and Secrets'. These 3 things are required to create the connection. We can create Key vaults to keep these keys masked.
    Now, ADLS can be connected using the Storage account name and Container name. Now go to Container>>IAM>> Add Role Assignment : Storage Blob Contibutor. Now add the App as member to that Role Assignment.
    Now, app can successfully access our storage.
