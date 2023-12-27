@@ -26,6 +26,8 @@ In this poject, we will prepare Olympic data available for analysis and dashboar
 **Visualization**: We can use Azure Synapse for charting and visualization. Later, it can also be connected to Dashboarding tools like PowerBI and Tableau
 
 -----------------------------------------**Services Used**---------------------------------------------------
+
+
 **Azure Data Lake Storage Gen2 (ADLS)** is a cloud-based repository for both structured and unstructured data. For example, you could use it to store everything from documents to images to social media streams. Data Lake Storage Gen2 is built on top of Blob Storage. This gives you the best of both worlds
 
 **Azure Data Factory** is a cloud-based data integration service that allows you to create data-driven workflows in the cloud for orchestrating and automating data movement and data transformation.ADF does not store any data itself. It allows you to create data-driven workflows to orchestrate the movement of data between supported data stores and then process the data using compute services in other regions or in an on-premise environment. It also allows you to monitor and manage workflows using both programmatic and UI mechanisms.
