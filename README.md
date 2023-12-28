@@ -53,6 +53,4 @@ In this poject, we will prepare Olympic data available for analysis and dashboar
    We can also connect this to Power BI for dashboardig purposes.
 
    
-    
-
-
+    **Thank you !!**
